@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="logo-popup.png">
+
+    <!-- Web Fonts -->
+    <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- CSS Header and Footer -->
+    <link rel="stylesheet" href="css/headers/header-default.css">
+    <link rel="stylesheet" href="css/footers/footer-v1.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="plugins/animate.css">
+    <link rel="stylesheet" href="plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="plugins/fancybox/source/jquery.fancybox.css">
+    <link rel="stylesheet" href="plugins/owl-carousel/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="plugins/revolution-slider/rs-plugin/css/settings.css" type="text/css" media="screen">
+    <!--[if lt IE 9]><link rel="stylesheet" href="plugins/revolution-slider/rs-plugin/css/settings-ie8.css" type="text/css" media="screen"><![endif]-->
+
+    <!-- CSS Theme -->    
+    <link rel="stylesheet" href="css/theme-colors/default.css" id="style_color">
+    <link rel="stylesheet" href="css/theme-skins/dark.css">
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="css/custom.css">
+    <script type="text/javascript" src="plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="plugins/jquery/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/map_api.js"></script>
+    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+    <!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+    <title>INVESTOR RELATIONS</title>
+    <script>
+        function initialize()
+        {
+            var mapProp = {
+                center: new google.maps.LatLng(16,108),
+                zoom:8,
+                panControl:true,
+                zoomControl:true,
+                mapTypeControl:true,
+                scaleControl:true,
+                streetViewControl:true,
+                overviewMapControl:true,
+                rotateControl:true,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("map"),mapProp);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+<body>
+    <!--=== Header ===-->
+    <div class="header">
+        <div class="container">
+            <!-- Logo -->
+            <a class="logo" href="index.html">
+                <img style="width:174px; height:39px;" src="img/logo_lungvang.png" alt="Logo">
+            </a>
+            <!-- End Logo -->
+
+            <!-- Topbar -->
+            <div class="topbar">
+                <ul class="loginbar pull-right">
+                    <li class="hoverSelector">
+                        <i class="fa fa-globe"></i>
+                        <a>Languages</a>
+                        <ul class="languages hoverSelectorBlock">
+                            <li class="active">
+                                <a href="#">English <i class="fa fa-check"></i></a>
+                            </li>
+                            <li><a href="#">Spanish</a></li>
+                            <li><a href="#">Russian</a></li>
+                            <li><a href="#">German</a></li>
+                        </ul>
+                    </li>
+                    <li class="topbar-devider"></li>
+                    <li><a href="page_faq.html">Help</a></li>
+                    <li class="topbar-devider"></li>
+                    <li><a href="page_login.html">Login</a></li>
+                </ul>
+            </div>
+            <!-- End Topbar -->
+
+            <!-- Toggle get grouped for better mobile display -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <img style="width: 40px; height: 40px; " src="img/button.png">
+            </button>
+            <!-- End Toggle -->
+        </div><!--/end container-->
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <!-- Home -->
+                    <li>
+                        <a href="./index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./company.html">
+                            Company
+                        </a>
+                    </li>
+                    <!-- End Home -->
+
+                    <!-- Pages -->                        
+                    <li class="dropdown">
+                        <a href="./product.html">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="media_and_communication.html">Media & Communication</a></li>
+                            <li><a href="software_as_a_service.html">Software as a Service</a></li>
+                            <li><a href="game_publisher.html">Game Publishing</a></li>
+                            <li><a href="venture_capital.html">Venture Capital</a></li>
+                            <li><a href="development_center.html">Business Developing Center</a></li>
+                            <li><a href="system_integration.html">System Integration</a></li>
+                        </ul>
+                    </li>
+                    <!-- End Pages -->
+
+                    <!-- Blog -->
+                    <li>
+                        <a href="./investor_relation.html">
+                            Investor relations
+                        </a>
+                    </li>
+                    <!-- End Blog -->
+
+                    <!-- Portfolio -->
+                    <li>
+                        <a>
+                            News
+                        </a>
+                    </li>
+                    <!-- End Portfolio -->
+
+                    <!-- Features -->
+                    <li class="dropdown">
+                        <a href="./career.html">
+                            Careers
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="career.html">Career</a></li>
+                            <li><a href="jobs.html">Lung Vang Hiring</a></li>
+                        </ul>
+                    </li>                    
+                    <!-- End Features -->
+
+                    <!-- Shortcodes -->
+                    <li>
+                        <a href="contact_us.html" style="padding-right:0px">
+                            Contact us
+                        </a>
+
+                    </li>
+                    <!-- End Shortcodes -->
+
+                </ul>
+            </div><!--/end container-->
+        </div><!--/navbar-collapse-->
+    </div>
+
+
+    <!-- End header -->
+    <div class="container content">
+        <div class="title-box-v2">
+            <h2>Acquisitions and <span class="color-orange">Disposals</span></h2>
+            <p>Basing on our significant achievements, Lung Vang can potentially grow well in this volatile market.</p>
+        </div>
+
+        <!-- About Sldier -->
+        <div class="shadow-wrapper margin-bottom-50">
+            <div class="carousel slide carousel-v1 box-shadow shadow-effect-2" data-ride="carousel" id="myCarousel">
+                <ol class="carousel-indicators">
+                    <li class="rounded-x active" data-target="#myCarousel" data-slide-to="0"></li>
+                    <li class="rounded-x " data-target="#myCarousel" data-slide-to="1"></li>
+                    <li class="rounded-x" data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner active" role="listbox">
+                    <div class="item active">
+                        <img class="img-responsive" src="img/investor_relations/top_banner1.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive" src="img/investor_relations/top_banner2.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive" src="img/investor_relations/top_banner3.png" alt="">
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        <!-- End About Sldier -->
+
+        <div class="row margin-bottom-10">
+            <div class="col-sm-4">
+                <div class="service-block service-block-default">
+                    <img class="custom" style="width:46px; height:44px; margin-bottom: 10px; " src="img/investor_relations/careful_preparation_icon.png">
+                    <h2 class="heading-md">Careful Preparation</h2>
+                    <p>Taking the time for nearly a year to invest in the core powers, including Human Resources - Technology – Management System, thus, Lung Vang has an extremely solid foundation for strong and durable growth.</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="service-block service-block-default">
+                    <img class="custom" style="width:46px; height:44px; margin-bottom: 10px;" src="img/investor_relations/partner's_experience_icon.png">
+                    <h2 class="heading-md">Partners’ Experience</h2>
+                    <p style="padding-bottom: 20px">Respectable achievements and numerous years of experience from our joint venture partners give us enough confidence to conquer such a hard mountain like Lung Vang.</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="service-block service-block-default">
+                    <img class="custom" style="width:46px; height:44px; margin-bottom: 10px;" src="img/investor_relations/startegy_icon.png">
+                    <h2 class="heading-md">Unique Strategy</h2>
+                    <p style="padding-bottom: 20px">From the very first steps, Lung Vang has positioned at a complex collecting many fields instead of being tied in any particular area, which makes us as sustainable and developped as we are today.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=== End Content Part ===-->
+    <div class="parallax-bg parallaxBg1" style="background-position: 45% 37px;">
+        <div class="container content parallax-about" style="padding-bottom: 0px !important;">
+            <div class="title-box-v2">
+                <h2>About <span class="color-orange">Lung Vang</span></h2>
+                <p>Lung Vang stands for the future of Innovation and Sustainability becoming entrepreneurs’ top strategy.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="banner-info dark margin-bottom-10">
+                        <img style="width:46px; height:44px; float:left; margin-right:15px " class="custom" style="padding: 0" src="img/investor_relations/pioneer_icon.png">
+                        <div class="overflow-h">
+                            <h3>Pioneer</h3>
+                            <p>Challenge with highly integrated business model requires the strict and logical management, the most advanced  methods and system in the world, we confidently asserted our pioneering role in the study and application of new technologies and lead-hedging management achievements.</p>
+                        </div>
+                    </div>
+                    <div class="banner-info dark margin-bottom-10">
+                        <img style="width:46px; height:44px; float:left; margin-right:15px " class="custom" style="padding: 0" src="img/investor_relations/responsible_company_icon.png">
+                        <div class="overflow-h">
+                            <h3>Responsible Company</h3>
+                            <p>Sustainable development, for us, is to please all of people we have touched. Lung Vang never stop trying our best to provide best qualified products/services and implementing best HR policies.</p>
+                        </div>
+                    </div>
+                    <div class="banner-info dark margin-bottom-10">
+                        <img style="width:46px; height:44px; float:left; margin-right:15px " class="custom" style="padding: 0" src="img/investor_relations/our_divisions_icon.png">
+                        <div class="overflow-h">
+                            <h3>Our divisions</h3>
+                            <p>Lung Vang are working on 6 sectors:  LV capital invests into potential technology and/or communication projects; LV media about communication, press, online marketing; LV Online provides digital gadgets like payment gateway, POS; Game Portal creates entertainment with last updated games; LV LeximIT gives out useful soft-wares all over the world; ITC meets the demands of system integration.</p>
+                        </div>
+                    </div>
+                    <div class="margin-bottom-20"></div>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-responsive" src="img/investor_relations/about.png" alt="">
+                </div>
+            </div>
+        </div><!--/container-->
+    </div>
+    <!--=== End Parallax About Block ===-->
+
+    <div class="container content">
+        <div class="title-box-v2">
+            <h2>Our Company <span class="color-orange">life</span></h2>
+            <p>Lung Vang intends to be the best house full of unity, warm hearts and uniquity.</p>
+        </div>
+
+        <div class="row margin-bottom-40">
+            <!-- Begin Easy Block v2 -->
+            <div class="col-md-3 col-sm-6 md-margin-bottom-20">
+                <div class="simple-block">
+                    <img class="img-responsive img-bordered margin-bottom-10" src="img/investor_relations/our-company1.png" alt="">
+                    <p>Every member of Lung Vang is a part of our big family.</p>
+                </div>
+            </div>
+            <!-- End Simple Block -->
+
+            <!-- Begin Easy Block v2 -->
+            <div class="col-md-3 col-sm-6 md-margin-bottom-20">
+                <div class="simple-block">
+                    <img class="img-responsive img-bordered margin-bottom-10" src="img/investor_relations/our-company2.png" alt="">
+                    <p>We  never stop making differences in any aspect of Lung Vang.</p>
+                </div>
+            </div>
+            <!-- End Simple Block -->
+
+
+            <!-- Begin Easy Block v2 -->
+            <div class="col-md-3 col-sm-6 md-margin-bottom-20">
+                <div class="simple-block">
+                    <img class="img-responsive img-bordered margin-bottom-10" src="img/investor_relations/our-company3.png" alt="">
+                    <p>Support each other so that anyone can be at the top.</p>
+                </div>
+            </div>
+            <!-- End Simple Block -->
+
+            <!-- Begin Easy Block v2 -->
+            <div class="col-md-3 col-sm-6 md-margin-bottom-20">
+                <div class="simple-block">
+                    <img class="img-responsive img-bordered margin-bottom-10" src="img/investor_relations/our-company4.png" alt="">
+                    <p>Coveying the best quality to all customers is our daily job.</p>
+                </div>
+            </div>
+            <!-- End Simple Block -->
+        </div>
+    </div><!--/container-->
+    <!--=== Container Part ===-->
+
+    <div class="parallax-team parallaxBg" style="background-position: 50% 42px;">
+        <div class="container content">
+            <div class="title-box-v2">
+                <h2>WHY<span class="color-orange"> LUNG VANG</span></h2>
+                <p>Lung Vang stands for the future of Innovation and Sustainability.</p>
+            </div>
+
+            <div class="row">
+                <!-- Team v2 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="team-v2">
+                        <img class="img-responsive" src="img/investor_relations/why_lv_1.png" alt="">
+                        <div class="inner-team">
+                            <h3>LONG TERM</h3>
+                            <small></small>
+                            <p>Focusing on customers inside and outside the organization, Lung Vang promises to implement the best human policies which turn to long-lasting relationship, thus, we can exist in the volatile market.
+                            </p>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Team v2 -->
+
+                <!-- Team v2 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="team-v2">
+                        <img class="img-responsive" src="img/investor_relations/why_lv_2.png" alt="">
+                        <div class="inner-team">
+                            <h3>Hight Quality</h3>
+                            <small></small>
+                            <p>For Lung Vang, the most pleasure of customers becomes the only scale of our daily work. We always do our best so that at the end of any given day we can convey happiness to our customers.</p>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Team v2 -->
+
+                <!-- Team v2 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="team-v2">
+                        <img class="img-responsive" src="img/investor_relations/why_lv_3.png" alt="">
+                        <div class="inner-team">
+                            <h3>Effective Management</h3>
+                            <small></small>
+                            <p style="padding-bottom: 19px;">Wise management shown by clear work breakdown structure, daily target and Lean Startup method can make Lung Vang immune to big mistakes that can put company into dark time.</p>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Team v2 -->
+
+                <!-- Team v2 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="team-v2">
+                        <img class="img-responsive" src="img/investor_relations/why_lv_4.png" alt="">
+                        <div class="inner-team">
+                            <h3>Flexibility</h3>
+                            <small></small>
+                            <p style="padding-bottom: 19px">Experiencing on plenty sectors allows Lung Vang chances to renew operations regularly, cutting down the risks of abrupt changing customers’ demands.</p>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Team v2 -->
+            </div>
+        </div>
+    </div>
+    <!--=== End Meet Our Team ===-->
+    <!--=== Contacts ===-->
+    <div class="contacts content">
+        <div class="container">
+            <div class="title-box-v2">
+                <h2>Our <span class="color-orange">Contacts</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <!-- Google Map -->
+                    <div id="map" class="map" style="position: relative; overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"><div class="gm-style" style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0; cursor: url(http://maps.gstatic.com/mapfiles/openhand_8_8.cur) 8 8, default;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 171px; top: -33px;"></div><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: -85px; top: -33px;"></div><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 171px; top: -289px;"></div><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 171px; top: 223px;"></div><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 427px; top: -33px;"></div><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: -85px; top: -289px;"></div><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: -85px; top: 223px;"></div><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 427px; top: -289px;"></div><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 427px; top: 223px;"></div></div></div></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 171px; top: -33px;"><canvas draggable="false" height="256" width="256" style="-webkit-user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: -85px; top: -33px;"></div><div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 171px; top: -289px;"></div><div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 171px; top: 223px;"></div><div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 427px; top: -33px;"></div><div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: -85px; top: -289px;"></div><div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: -85px; top: 223px;"></div><div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 427px; top: -289px;"></div><div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 427px; top: 223px;"></div></div></div></div><div style="position: absolute; z-index: 0; transform: translateZ(0px); left: 0px; top: 0px;"><div style="overflow: hidden; width: 555px; height: 350px;"><img src="./asd_files/StaticMapService.GetMapImage" style="width: 555px; height: 348px;"></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="transform: translateZ(0px); position: absolute; left: 171px; top: -33px; width: 256px; height: 256px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="./asd_files/vt" draggable="false" style="-webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 256px; height: 256px;"></div><div style="transform: translateZ(0px); position: absolute; left: -85px; top: -33px; width: 256px; height: 256px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="./asd_files/vt(1)" draggable="false" style="-webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 256px; height: 256px;"></div><div style="transform: translateZ(0px); position: absolute; left: 427px; top: -33px; width: 256px; height: 256px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="./asd_files/vt(2)" draggable="false" style="-webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 256px; height: 256px;"></div><div style="transform: translateZ(0px); position: absolute; left: 171px; top: -289px; width: 256px; height: 256px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="./asd_files/vt(3)" draggable="false" style="-webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 256px; height: 256px;"></div><div style="transform: translateZ(0px); position: absolute; left: -85px; top: -289px; width: 256px; height: 256px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="./asd_files/vt(4)" draggable="false" style="-webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 256px; height: 256px;"></div><div style="transform: translateZ(0px); position: absolute; left: 171px; top: 223px; width: 256px; height: 256px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="./asd_files/vt(5)" draggable="false" style="-webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 256px; height: 256px;"></div><div style="transform: translateZ(0px); position: absolute; left: -85px; top: 223px; width: 256px; height: 256px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="./asd_files/vt(6)" draggable="false" style="-webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 256px; height: 256px;"></div><div style="transform: translateZ(0px); position: absolute; left: 427px; top: 223px; width: 256px; height: 256px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="./asd_files/vt(7)" draggable="false" style="-webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 256px; height: 256px;"></div><div style="transform: translateZ(0px); position: absolute; left: 427px; top: -289px; width: 256px; height: 256px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="./asd_files/vt(8)" draggable="false" style="-webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 256px; height: 256px;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 2; width: 100%; height: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 3; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"><div style="cursor: default; position: absolute; width: 247px; height: 83px; left: 167px; top: 40px; z-index: 40;"><div style="position: absolute; left: 0px; top: 0px;"><div style="width: 0px; height: 0px; border-right-width: 10px; border-right-style: solid; border-right-color: transparent; border-left-width: 10px; border-left-style: solid; border-left-color: transparent; border-top-width: 24px; border-top-style: solid; border-top-color: rgba(0, 0, 0, 0.0980392); position: absolute; left: 114px; top: 83px;"></div><div style="position: absolute; left: 0px; top: 0px; border-radius: 2px; -webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; width: 247px; height: 83px; background-color: rgba(0, 0, 0, 0.2);"></div><div style="border-top-width: 24px; position: absolute; left: 114px; top: 80px;"><div style="position: absolute; overflow: hidden; left: -6px; top: -1px; width: 16px; height: 30px;"><div style="position: absolute; left: 6px; transform: skewX(22.6deg); transform-origin: 0px 0px 0px; height: 24px; width: 10px; box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 6px; background-color: rgb(255, 255, 255);"></div></div><div style="position: absolute; overflow: hidden; top: -1px; left: 10px; width: 16px; height: 30px;"><div style="position: absolute; left: 0px; transform: skewX(-22.6deg); transform-origin: 10px 0px 0px; height: 24px; width: 10px; box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 6px; background-color: rgb(255, 255, 255);"></div></div></div><div style="position: absolute; left: 1px; top: 1px; border-radius: 2px; width: 245px; height: 81px; background-color: rgb(255, 255, 255);"></div></div><div class="gm-style-iw" style="top: 9px; position: absolute; left: 15px; width: 217px;"><div style="display: inline-block; overflow: auto; max-height: 275px; max-width: 396px;"><div dir="ltr" jstcache="0"><div jstcache="51" class="transit-container"> <div jstcache="27" class="transit-title" style="display:none"> <span jstcache="28"></span> </div> <div jstcache="29" class="transit-title"> <span jstcache="30">34 St - Herald Sq</span> <div jstcache="31" class="transit-wheelchair-icon" style="display:none"></div> </div> <div jstcache="32" jsinstance="*0" class="transit-line-group" jsan="7.transit-line-group"> <div class="transit-line-group-vehicle-icons"> <img height="15" width="15" jstcache="33" src="./asd_files/subway.png" jsinstance="*0"> </div> <div jstcache="34" class="transit-line-group-content"> <div jstcache="35" jsinstance="0" class="transit-div-line-name"> <div jstcache="42" class="short" jsan="7.short"> <span jstcache="43" role="listitem" jsinstance="*0"><img alt="B" height="15" width="15" jstcache="45" src="./asd_files/B.png" class="renderable-component-icon"><span jstcache="46" style="display:none"><div jstcache="47" class="renderable-component-color-box" style="display:none"></div><span jstcache="48" class="renderable-component-text-box renderable-component-bold renderable-component-text-box-white" style="display:none" jsan="7.renderable-component-text-box,7.renderable-component-bold,7.renderable-component-text-box-white"><span jstcache="49" class="renderable-component-text-box-content" jsan="7.renderable-component-text-box-content"></span></span><span jstcache="50" class="renderable-component-text renderable-component-bold" style="display:none" jsan="7.renderable-component-text,7.renderable-component-bold"></span></span></span> </div> </div><div jstcache="35" jsinstance="1" class="transit-div-line-name"> <div jstcache="42" class="short" jsan="7.short"> <span jstcache="43" role="listitem" jsinstance="*0"><img alt="D" height="15" width="15" jstcache="45" src="./asd_files/D.png" class="renderable-component-icon"><span jstcache="46" style="display:none"><div jstcache="47" class="renderable-component-color-box" style="display:none"></div><span jstcache="48" class="renderable-component-text-box renderable-component-bold renderable-component-text-box-white" style="display:none" jsan="7.renderable-component-text-box,7.renderable-component-bold,7.renderable-component-text-box-white"><span jstcache="49" class="renderable-component-text-box-content" jsan="7.renderable-component-text-box-content"></span></span><span jstcache="50" class="renderable-component-text renderable-component-bold" style="display:none" jsan="7.renderable-component-text,7.renderable-component-bold"></span></span></span> </div> </div><div jstcache="35" jsinstance="2" class="transit-div-line-name"> <div jstcache="42" class="short" jsan="7.short"> <span jstcache="43" role="listitem" jsinstance="*0"><img alt="F" height="15" width="15" jstcache="45" src="./asd_files/F.png" class="renderable-component-icon"><span jstcache="46" style="display:none"><div jstcache="47" class="renderable-component-color-box" style="display:none"></div><span jstcache="48" class="renderable-component-text-box renderable-component-bold renderable-component-text-box-white" style="display:none" jsan="7.renderable-component-text-box,7.renderable-component-bold,7.renderable-component-text-box-white"><span jstcache="49" class="renderable-component-text-box-content" jsan="7.renderable-component-text-box-content"></span></span><span jstcache="50" class="renderable-component-text renderable-component-bold" style="display:none" jsan="7.renderable-component-text,7.renderable-component-bold"></span></span></span> </div> </div><div jstcache="35" jsinstance="*3" class="transit-div-line-name"> <div jstcache="42" class="short" jsan="7.short"> <span jstcache="43" role="listitem" jsinstance="*0"><img alt="M" height="15" width="15" jstcache="45" src="./asd_files/M.png" class="renderable-component-icon"><span jstcache="46" style="display:none"><div jstcache="47" class="renderable-component-color-box" style="display:none"></div><span jstcache="48" class="renderable-component-text-box renderable-component-bold renderable-component-text-box-white" style="display:none" jsan="7.renderable-component-text-box,7.renderable-component-bold,7.renderable-component-text-box-white"><span jstcache="49" class="renderable-component-text-box-content" jsan="7.renderable-component-text-box-content"></span></span><span jstcache="50" class="renderable-component-text renderable-component-bold" style="display:none" jsan="7.renderable-component-text,7.renderable-component-bold"></span></span></span> </div> </div> <div class="transit-clear-lines"></div> <div jstcache="36" class="transit-nlines-more-msg" style="display:none"> and <span jstcache="37"></span> more. </div> </div> </div> <div jsaction="poiInfoWindow.viewOnGoogleMaps" class="view-link"> View on Google Maps </div> </div></div></div></div><div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 10px; z-index: 10000; cursor: pointer;"><img src="./asd_files/mapcnt6.png" draggable="false" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></div></div></div></div><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a target="_blank" href="https://maps.google.com/maps?ll=40.748866,-73.988366&z=15&t=m&hl=en-US&gl=US&mapclient=apiv3" title="Click to see this area on Google Maps" style="position: static; overflow: visible; float: none; display: inline;"><div style="width: 62px; height: 26px; cursor: pointer;"><img src="./asd_files/google_white2.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 62px; height: 26px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></a></div><div style="padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 256px; height: 148px; position: absolute; left: 128px; top: 84px; background-color: white;"><div style="padding: 0px 0px 10px; font-size: 16px;">Map Data</div><div style="font-size: 13px;">Map data ©2015 Google</div><div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;"><img src="./asd_files/mapcnt6.png" draggable="false" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 283px; bottom: 0px; width: 121px;"><div draggable="false" class="gm-style-cc" style="-webkit-user-select: none;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right;"><a style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer; display: none;">Map Data</a><span>Map data ©2015 Google</span></div></div></div><div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;"><div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Map data ©2015 Google</div></div><div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; -webkit-user-select: none; position: absolute; right: 113px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right;"><a href="https://www.google.com/intl/en-US_US/help/terms_maps.html" target="_blank" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Terms of Use</a></div></div><div draggable="false" class="gm-style-cc" style="-webkit-user-select: none; position: absolute; right: 18px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right;"><a target="_new" title="Report errors in the road map or imagery to Google" href="https://www.google.com/maps/@40.748866,-73.988366,15z/data=!10m1!1e1!12b1?source=apiv3&rapsrc=apiv3" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;">Report a map error</a></div></div><div class="gmnoprint" draggable="false" style="position: absolute; -webkit-user-select: none; margin-left: 5px; margin-top: 5px; width: 13px; height: 13px; right: 0px; bottom: 0px;"><div style="overflow: hidden; width: 120px; height: 120px; display: none; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 3px; top: 3px; width: 117px; height: 117px; overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"><div class="gm-style" style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0; cursor: url(http://maps.gstatic.com/mapfiles/openhand_8_8.cur) 8 8, default;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: -301px; top: -122px;"></div><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: -45px; top: -122px;"></div></div></div></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"></div><div style="position: absolute; z-index: 0; transform: translateZ(0px); left: 0px; top: 0px;"><div style="overflow: hidden;"></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 2; width: 100%; height: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 3; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"><div style="border: 1px solid rgb(255, 255, 255); outline: rgb(0, 0, 0) solid 1px; opacity: 0.35; position: absolute; margin-top: -22px; margin-left: -34px; width: 69px; height: 44px; left: 0px; top: 0px;"><div style="position: absolute; opacity: 0.7; width: 69px; height: 44px; background: rgb(0, 0, 0);"></div></div><div style="border: 1px solid rgb(255, 255, 255); outline: rgb(0, 0, 0) solid 1px; opacity: 0.35; position: absolute; cursor: url(http://maps.gstatic.com/mapfiles/openhand_8_8.cur) 8 8, default; margin-top: -22px; margin-left: -34px; width: 69px; height: 44px; left: 0px; top: 0px;"><div style="position: absolute; width: 69px; height: 44px;"></div></div></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div></div></div></div><div style="width: 13px; height: 13px; position: absolute; cursor: pointer; left: 0px; top: 0px;"><div title="Open the overview map" style="width: 13px; height: 13px; overflow: hidden; position: absolute;"><img src="./asd_files/mapcnt6.png" draggable="false" style="position: absolute; left: -2px; top: -364px; width: 59px; height: 492px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></div></div><div class="gmnoprint" draggable="false" controlwidth="78" controlheight="169" style="margin: 5px; -webkit-user-select: none; position: absolute; left: 0px; top: 0px;"><div class="gmnoprint" controlwidth="78" controlheight="80" style="cursor: url(http://maps.gstatic.com/mapfiles/openhand_8_8.cur) 8 8, default; width: 78px; height: 78px; position: absolute; left: 0px; top: 0px;"><div class="gmnoprint" controlwidth="78" controlheight="80" style="width: 78px; height: 78px; position: absolute; left: 0px; top: 0px;"><div style="visibility: hidden;"><svg version="1.1" overflow="hidden" width="78px" height="78px" viewBox="0 0 78 78" style="position: absolute; left: 0px; top: 0px;"><circle cx="39" cy="39" r="35" stroke-width="3" fill-opacity="0.2" fill="#f2f4f6" stroke="#f2f4f6"></circle><g transform="rotate(0 39 39)"><rect x="33" y="0" rx="4" ry="4" width="12" height="11" stroke="#a6a6a6" stroke-width="1" fill="#f2f4f6"></rect><polyline points="36.5,8.5 36.5,2.5 41.5,8.5 41.5,2.5" stroke-linejoin="bevel" stroke-width="1.5" fill="#f2f4f6" stroke="#000"></polyline></g></svg></div></div><div class="gmnoprint" controlwidth="59" controlheight="59" style="position: absolute; left: 10px; top: 11px;"><div style="width: 59px; height: 59px; overflow: hidden; position: relative;"><img src="./asd_files/mapcnt6.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 59px; height: 492px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"><div title="Pan left" style="position: absolute; left: 0px; top: 20px; width: 19.6666666666667px; height: 19.6666666666667px; cursor: pointer;"></div><div title="Pan right" style="position: absolute; left: 39px; top: 20px; width: 19.6666666666667px; height: 19.6666666666667px; cursor: pointer;"></div><div title="Pan up" style="position: absolute; left: 20px; top: 0px; width: 19.6666666666667px; height: 19.6666666666667px; cursor: pointer;"></div><div title="Pan down" style="position: absolute; left: 20px; top: 39px; width: 19.6666666666667px; height: 19.6666666666667px; cursor: pointer;"></div></div></div></div><div controlwidth="32" controlheight="40" style="cursor: url(http://maps.gstatic.com/mapfiles/openhand_8_8.cur) 8 8, default; position: absolute; left: 23px; top: 85px;"><div aria-label="Street View Pegman Control" style="width: 32px; height: 40px; overflow: hidden; position: absolute; left: 0px; top: 0px;"><img src="./asd_files/cb_scout2.png" draggable="false" style="position: absolute; left: -9px; top: -102px; width: 1028px; height: 214px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div aria-label="Pegman is disabled" style="width: 32px; height: 40px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="./asd_files/cb_scout2.png" draggable="false" style="position: absolute; left: -107px; top: -102px; width: 1028px; height: 214px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div aria-label="Pegman is on top of the Map" style="width: 32px; height: 40px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="./asd_files/cb_scout2.png" draggable="false" style="position: absolute; left: -58px; top: -102px; width: 1028px; height: 214px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div aria-label="Street View Pegman Control" style="width: 32px; height: 40px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="./asd_files/cb_scout2.png" draggable="false" style="position: absolute; left: -205px; top: -102px; width: 1028px; height: 214px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></div><div class="gmnoprint" controlwidth="0" controlheight="0" style="opacity: 0.6; display: none; position: absolute;"><div title="Rotate map 90 degrees" style="width: 22px; height: 22px; overflow: hidden; position: absolute; cursor: pointer;"><img src="./asd_files/mapcnt6.png" draggable="false" style="position: absolute; left: -38px; top: -360px; width: 59px; height: 492px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></div><div class="gmnoprint" controlwidth="20" controlheight="39" style="position: absolute; left: 29px; top: 130px;"><div style="width: 20px; height: 39px; overflow: hidden; position: absolute;"><img src="./asd_files/mapcnt6.png" draggable="false" style="position: absolute; left: -39px; top: -401px; width: 59px; height: 492px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div title="Zoom in" style="position: absolute; left: 0px; top: 2px; width: 20px; height: 17px; cursor: pointer;"></div><div title="Zoom out" style="position: absolute; left: 0px; top: 19px; width: 20px; height: 17px; cursor: pointer;"></div></div></div><div class="gmnoprint" style="margin: 5px; z-index: 0; position: absolute; cursor: pointer; right: 0px; top: 0px;"><div class="gm-style-mtc" style="float: left;"><div draggable="false" title="Show street map" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 1px 6px; border-bottom-left-radius: 2px; border-top-left-radius: 2px; -webkit-background-clip: padding-box; border: 1px solid rgba(0, 0, 0, 0.14902); -webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; min-width: 23px; font-weight: 500; background-color: rgb(255, 255, 255); background-clip: padding-box;">Map</div><div style="z-index: -1; padding-top: 2px; -webkit-background-clip: padding-box; border-width: 0px 1px 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-color: rgba(0, 0, 0, 0.14902); border-bottom-color: rgba(0, 0, 0, 0.14902); border-left-color: rgba(0, 0, 0, 0.14902); -webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; position: absolute; left: 0px; top: 21px; text-align: left; display: none; background-color: white; background-clip: padding-box;"><div draggable="false" title="Show street map with terrain" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 3px 8px 3px 3px; direction: ltr; text-align: left; white-space: nowrap; background-color: rgb(255, 255, 255);"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none;"><img src="./asd_files/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">Terrain</label></div></div></div><div class="gm-style-mtc" style="float: left;"><div draggable="false" title="Show satellite imagery" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(86, 86, 86); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 1px 6px; border-bottom-right-radius: 2px; border-top-right-radius: 2px; -webkit-background-clip: padding-box; border-width: 1px 1px 1px 0px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-top-color: rgba(0, 0, 0, 0.14902); border-right-color: rgba(0, 0, 0, 0.14902); border-bottom-color: rgba(0, 0, 0, 0.14902); -webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; min-width: 40px; background-color: rgb(255, 255, 255); background-clip: padding-box;">Satellite</div><div style="z-index: -1; padding-top: 2px; -webkit-background-clip: padding-box; border-width: 0px 1px 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-color: rgba(0, 0, 0, 0.14902); border-bottom-color: rgba(0, 0, 0, 0.14902); border-left-color: rgba(0, 0, 0, 0.14902); -webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; position: absolute; right: 0px; top: 21px; text-align: left; display: none; background-color: white; background-clip: padding-box;"><div draggable="false" title="Zoom in to show 45 degree view" style="color: rgb(184, 184, 184); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 3px 8px 3px 3px; direction: ltr; text-align: left; white-space: nowrap; display: none; background-color: rgb(255, 255, 255);"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; border: 1px solid rgb(241, 241, 241); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none;"><img src="./asd_files/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">45°</label></div><div draggable="false" title="Show imagery with street names" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 3px 8px 3px 3px; direction: ltr; text-align: left; white-space: nowrap; background-color: rgb(255, 255, 255);"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden;"><img src="./asd_files/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">Labels</label></div></div></div></div><div draggable="false" class="gm-style-cc" style="position: absolute; -webkit-user-select: none; right: 185px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right;"><span>200 m&nbsp;</span><div style="position: relative; display: inline-block; height: 8px; bottom: -1px; width: 55px;"><div style="width: 100%; height: 4px; position: absolute; left: 0px; top: 0px; background-color: rgb(255, 255, 255);"></div><div style="width: 4px; height: 8px; left: 0px; top: 0px; background-color: rgb(255, 255, 255);"></div><div style="width: 4px; height: 8px; position: absolute; left: 0px; bottom: 0px; background-color: rgb(255, 255, 255);"></div><div style="position: absolute; height: 2px; left: 1px; bottom: 1px; right: 1px; background-color: rgb(102, 102, 102);"></div><div style="position: absolute; width: 2px; height: 6px; left: 1px; top: 1px; background-color: rgb(102, 102, 102);"></div><div style="width: 2px; height: 6px; position: absolute; bottom: 1px; right: 1px; background-color: rgb(102, 102, 102);"></div></div></div></div></div></div>
+                    <!-- End Google Map -->
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <!-- Business Hours -->
+                    <h3>Get In Touch</h3>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, sed do eiusmod tempor incididu ntjusto sit amet risus etiam porta sem.</p>
+                    <ul class="list-inline margin-bottom-20">
+                        <li><strong>Monday-Friday:</strong> 10am to 8pm</li>
+                        <li><strong>Saturday:</strong> 11am to 3pm</li>
+                        <li><strong>Sunday:</strong> Closed</li>
+                    </ul>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="input-group margin-bottom-10">
+                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                <input type="name" placeholder="Name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="input-group margin-bottom-20">
+                                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                <input type="email" placeholder="Email" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+                    <textarea rows="5" class="form-control margin-bottom-20" placeholder="Type your question here..."></textarea>
+                    <button class="btn-u btn-u-sm pull-right" type="button">Send question</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--=== Footer Version 1 ===-->
+    <div class="footer-v1" style="clear: both">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <!-- About -->
+                    <div class="col-md-3 md-margin-bottom-40">o
+                        <a href="index.html" style="margin-left: -10px;"><img id="logo-footer" class="footer-logo" style="width:185px; height:45px" src="img/logo_footer.png" alt=""></a>
+                        <p>Lung Vang Company aims to be key integrated service provider tooled with its unparalleled intellectual capital and unmatched global capability.</p>
+                        <!--<p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>    -->
+                    </div><!--/col-md-3-->
+                    <!-- End About -->
+
+                    <!-- Latest -->
+                    <!--<div class="col-md-3 md-margin-bottom-40">
+                        <div class="posts">
+                            <div class="headline"><h2>Latest Posts</h2></div>
+                            <ul class="list-unstyled latest-list">
+                                <li>
+                                    <a href="#">Incredible content</a>
+                                    <small>May 8, 2014</small>
+                                </li>
+                                <li>
+                                    <a href="#">Best shoots</a>
+                                    <small>June 23, 2014</small>
+                                </li>
+                                <li>
+                                    <a href="#">New Terms and Conditions</a>
+                                    <small>September 15, 2014</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>&lt;!&ndash;/col-md-3&ndash;&gt;
+                    &lt;!&ndash; End Latest &ndash;&gt; -->
+
+                    <!-- Link List -->
+                    <div class="col-md-3 md-margin-bottom-40">
+                        <div class="headline"><h2>Useful Links</h2></div>
+                        <ul class="list-unstyled link-list">
+                            <li><a href="#">Company</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="#">Products</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="#">Investor relations</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="#">News</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="#">Career</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="#">Contact Us</a><i class="fa fa-angle-right"></i></li>
+                        </ul>
+                    </div><!--/col-md-3-->
+                    <!-- End Link List -->
+
+                    <div class="col-md-3 md-margin-bottom-40">
+                        <div class="headline"><h2>Products</h2></div>
+                        <ul class="list-unstyled link-list">
+                            <li><a href="#">Media & Communication</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="#">Software As a Service </a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="#">Game Publishing</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="#">Venture Capital</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="#">Business Developing Center</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="#">System Integration</a><i class="fa fa-angle-right"></i></li>
+                        </ul>
+                    </div>
+
+                    <!-- Address -->
+                    <div class="col-md-3 map-img md-margin-bottom-40">
+                        <div class="headline"><h2>Contact</h2></div>
+                        <address class="md-margin-bottom-40">
+                            3700 Wilshire Blvd. Suite 860 <br />
+                            Los Angeles, CA 90010, USA. <br />
+                            Phone:+1 800 123 3456 <br />
+                        </address>
+                    </div><!--/col-md-3-->
+                    <!-- End Address -->
+                </div>
+            </div>
+        </div><!--/footer-->
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            2015 &copy; All Rights Reserved.
+                            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                        </p>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="col-md-6">
+                        <ul class="footer-socials list-inline">
+                            <li>
+                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
+                                    <i><img style="width: 25px; height:25px " src="img/social_icon/fb_icon.png"/></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus">
+                                    <i class="fa fa-google-plus">
+                                        <img style="width: 25px; height:25px " src="img/social_icon/ggplus_icon.png"/>
+                                    </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin">
+                                    <i class="fa fa-linkedin">
+                                        <img style="width: 25px; height:25px " src="img/social_icon/likedin_icon.png"/>
+                                    </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest">
+                                    <i class="fa fa-pinterest">
+                                        <img style="width: 25px; height:25px " src="img/social_icon/twitter_icon.png"/>
+                                    </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dribbble">
+                                    <i class="fa fa-dribbble"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Social Links -->
+                </div>
+            </div>
+        </div><!--/copyright-->
+    </div>
+    <!--=== End Footer Version 1 ===--> 
+</body>
+</html>

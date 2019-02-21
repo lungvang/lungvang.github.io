@@ -1,13 +1,15 @@
-import React from "react"
+import React from 'react'
 
 class Footer extends React.Component {
-    render() {
-        return(
-            <footer>
-                Footer ABC
-            </footer>
-        )
-    }
+  render() {
+    return (
+      <footer>
+        <div>
+          <span>© Copyright Lung Vang 2019</span>
+        </div>
+      </footer>
+    )
+  }
 }
 
-export default Footer;
+export default Footer

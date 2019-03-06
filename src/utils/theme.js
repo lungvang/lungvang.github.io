@@ -3,7 +3,7 @@
  * It should serve as a guideline for styling,
  * but not all styles *have* to be taken from here.
  */
-const breakpoints = ['40em', '52em', '64em'];
+const breakpoints = ['40em', '52em', '64em', '80em'];
 
 /**
  * Primary: Colors to use for actionable items, such as links, buttons etc.

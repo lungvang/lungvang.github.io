@@ -7,7 +7,7 @@ export const NavLink = props => (
     py={1}
     color="inherit"
     {...props}
-    css={{ display: 'block', fontWeight: 'bold' }}
+    css={{ display: 'inline-block', fontWeight: 'bold' }}
   />
 );
 

@@ -27,20 +27,20 @@
   },
   "homepage": "https://github.com/lungvang/lungvang.github.io#readme",
   "dependencies": {
-    "gatsby": "2.2.9",
-    "gatsby-plugin-manifest": "2.0.24",
+    "gatsby": "2.3.4",
+    "gatsby-plugin-manifest": "2.0.25",
     "gatsby-plugin-offline": "2.0.25",
-    "gatsby-plugin-react-helmet": "3.0.10",
+    "gatsby-plugin-react-helmet": "3.0.11",
     "gatsby-plugin-styled-components": "3.0.7",
     "polished": "^3.1.0",
     "prop-types": "^15.7.2",
-    "react": "16.8.5",
-    "react-dom": "16.8.5",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
     "react-helmet": "5.2.0",
     "rebass": "^3.1.0",
     "styled-components": "4.2.0",
-    "styled-icons": "^7.6.0",
-    "styled-system": "^4.0.8"
+    "styled-icons": "^7.7.0",
+    "styled-system": "^4.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",

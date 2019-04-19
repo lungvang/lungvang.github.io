@@ -5,6 +5,12 @@
  */
 const breakpoints = ['40em', '52em', '64em', '80em'];
 
+const mediaQueries = {
+  small: `@media screen and (min-width: ${breakpoints[0]})`,
+  medium: `@media screen and (min-width: ${breakpoints[1]})`,
+  large: `@media screen and (min-width: ${breakpoints[2]})`,
+};
+
 /**
  * Primary: Colors to use for actionable items, such as links, buttons etc.
  * Grey: Colors for items that are not that important
@@ -103,8 +109,21 @@ const letterSpacings = {
  */
 const radii = [0, 2, 4, 8, 16];
 
+const buttons = {
+  primary: {
+    color: '#fff',
+    backgroundColor: colors.primary[900],
+  },
+  outline: {
+    color: colors.primary[900],
+    backgroundColor: 'transparent',
+    boxShadow: 'inset 0 0 0 1px',
+  },
+};
+
 export default {
   breakpoints,
+  mediaQueries,
   colors,
   space,
   fontSizes,
@@ -112,4 +131,5 @@ export default {
   fontWeights,
   letterSpacings,
   radii,
+  buttons,
 };

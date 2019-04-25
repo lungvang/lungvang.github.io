@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
-import { display } from 'styled-system';
 import { Bars } from 'styled-icons/fa-solid/Bars';
 import {
   Flex,
@@ -12,10 +10,6 @@ import {
   NavLink,
   Button,
 } from '../ArgonKit';
-
-export const ExBox = styled(Box)`
-  ${display};
-`;
 
 const Header = () => {
   const [showSidebar, setShowSidebar] = useState(false);

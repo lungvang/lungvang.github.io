@@ -15,13 +15,13 @@ const Header = () => {
   const [showSidebar, setShowSidebar] = useState(false);
 
   return (
-    <header>
+    <Box as="header" width={[1]} css={{ position: 'absolute' }}>
       <Flex px={2} alignItems="center">
-        <Heading px={2} fontWeight="bold">
+        <Heading px={2} fontWeight="bold" color="white">
           Lung Vang
         </Heading>
         <Box as="nav" ml="auto" p={2}>
-          <Nav css={{ '@media (max-width: 700px)': { display: 'none' } }}>
+          <Nav css={{ '@media (max-width: 40em)': { display: 'none' } }}>
             <NavItem>
               <NavLink>Consulting</NavLink>
             </NavItem>
@@ -44,7 +44,7 @@ const Header = () => {
           p={2}
           color="black"
           bg="transparent"
-          css={{ '@media (min-width: 700px)': { display: 'none' } }}
+          css={{ '@media (min-width: 40em)': { display: 'none' } }}
           onClick={() => setShowSidebar(!showSidebar)}
         >
           <Bars size="32px" />
@@ -58,7 +58,7 @@ const Header = () => {
         <NavLink>Blog</NavLink>
         <NavLink>About</NavLink>
       </Sidebar>
-    </header>
+    </Box>
   );
 };
 

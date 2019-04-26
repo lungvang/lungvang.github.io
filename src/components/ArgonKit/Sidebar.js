@@ -8,7 +8,7 @@ export const Sidebar = props => (
     py={1}
     color="white"
     bg="grey.700"
-    width={[2 / 3, 1 / 3, 1 / 4]}
+    width={[1, 1 / 3, 1 / 4]}
     css={{
       position: 'fixed',
       top: 0,

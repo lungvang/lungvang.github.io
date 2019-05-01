@@ -1,8 +1,5 @@
 export { Flex, Box, Text, Heading, Button, Link, Image, Card } from 'rebass';
 
-export { default as theme } from './theme';
-export { Colors as colors, createColors } from './Colors';
-
 export { Avatar } from './Avatar';
 export { Badge } from './Badge';
 export { BlockLink } from './BlockLink';

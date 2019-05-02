@@ -20,7 +20,7 @@ const Header = () => {
         <Heading px={2} fontWeight="bold" color="white">
           Lung Vang
         </Heading>
-        <Box as="nav" ml="auto" p={2}>
+        <Box as="nav" ml="auto" p={2} color="white">
           <Nav css={{ '@media (max-width: 40em)': { display: 'none' } }}>
             <NavItem>
               <NavLink>Consulting</NavLink>
@@ -42,7 +42,7 @@ const Header = () => {
         <Button
           href="#!"
           p={2}
-          color="black"
+          color="white"
           bg="transparent"
           css={{ '@media (min-width: 40em)': { display: 'none' } }}
           onClick={() => setShowSidebar(!showSidebar)}

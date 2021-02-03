@@ -1,14 +1,17 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
 import { LocalizedLink, LocalesList } from 'gatsby-theme-i18n';
+import { useIntl } from 'react-intl';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 const Index = ({ data }) => {
+  const intl = useIntl();
+
   return (
     <Layout>
-      <SEO title="Home" />
-      <h1>Hello World</h1>
+      <SEO title={intl.formatMessage({ id: 'home' })} />
+      <h1>{intl.formatMessage({ id: 'helloWorld' })}</h1>
       <p>This is in the Index page.</p>
       <p>
         <LocalizedLink to="/page-2/">Link to second page</LocalizedLink>

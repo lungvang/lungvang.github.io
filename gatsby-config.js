@@ -1,6 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: 'Lung Vang JSC.',
+    siteUrl: `https://lungvang.com`,
+    description: `Lung Vang Landing Page`,
+    author: `Jason Quach`,
   },
   plugins: [
     {
@@ -17,16 +20,17 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     {
-      resolve: `gatsby-theme-notes`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        basePath: `/notes`,
+        path: `${__dirname}/src/pages`,
+        name: `pages`,
       },
     },
     {
-      resolve: `gatsby-theme-blog`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        prismPreset: `prism-okaidia`,
-        basePath: `/blog`,
+        path: `${__dirname}/content/posts`,
+        name: `blog`,
       },
     },
     {
@@ -35,12 +39,27 @@ module.exports = {
         prefixes: [`/app/*`],
       },
     },
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-theme-i18n`,
       options: {
         defaultLang: `en`,
         locales: process.env.LOCALES || `en vi`,
         configPath: require.resolve(`./i18n/config.json`),
+      },
+    },
+    {
+      resolve: `gatsby-theme-i18n-react-intl`,
+      options: {
+        defaultLocale: `./i18n/react-intl/en.json`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        defaultLayouts: {
+          default: require.resolve(`./src/components/layout.js`),
+        },
       },
     },
   ],

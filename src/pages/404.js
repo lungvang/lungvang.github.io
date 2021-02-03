@@ -1,13 +1,16 @@
-import React from 'react';
-import { LocalesList } from 'gatsby-theme-i18n';
+import * as React from 'react';
+import { useIntl } from 'react-intl';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
-const ErrorPage = () => {
+const NotFound = () => {
+  const intl = useIntl();
   return (
-    <div>
-      Error Page
-      <LocalesList />
-    </div>
+    <Layout>
+      <SEO title="404" />
+      <h1>{intl.formatMessage({ id: 'notFound' })}</h1>
+    </Layout>
   );
 };
 
-export default ErrorPage;
+export default NotFound;

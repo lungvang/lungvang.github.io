@@ -29,5 +29,19 @@ module.exports = {
         basePath: `/blog`,
       },
     },
+    {
+      resolve: `gatsby-plugin-create-client-paths`,
+      options: {
+        prefixes: [`/app/*`],
+      },
+    },
+    {
+      resolve: `gatsby-theme-i18n`,
+      options: {
+        defaultLang: `en`,
+        locales: process.env.LOCALES || `en vi`,
+        configPath: require.resolve(`./i18n/config.json`),
+      },
+    },
   ],
 };

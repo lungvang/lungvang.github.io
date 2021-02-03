@@ -1,10 +1,12 @@
-import tailwind from '@theme-ui/presets';
+import { tailwind } from '@theme-ui/presets';
+import prism from '@theme-ui/prism/presets/theme-ui';
 
 export default {
   ...tailwind,
-  colors: {
-    ...tailwind.colors,
-    text: '#111',
-    background: '#fff',
+  styles: {
+    ...tailwind.styles,
+    code: {
+      ...prism,
+    },
   },
 };

@@ -3,7 +3,6 @@ module.exports = {
     title: 'Lung Vang JSC.',
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -17,6 +16,18 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
-    'gatsby-plugin-styled-components',
+    {
+      resolve: `gatsby-theme-notes`,
+      options: {
+        basePath: `/notes`,
+      },
+    },
+    {
+      resolve: `gatsby-theme-blog`,
+      options: {
+        prismPreset: `prism-okaidia`,
+        basePath: `/blog`,
+      },
+    },
   ],
 };

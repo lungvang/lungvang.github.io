@@ -11,4 +11,4 @@ yarn.lock
 yarn-error.log
 
 # Build directory
-/public
+public

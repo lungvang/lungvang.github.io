@@ -11,7 +11,10 @@ const BlogTemplate = ({ data, pageContext }) => {
       <h1>Data</h1>
       <div>
         {data.mdx ? (
-          <MDXRenderer>{data.mdx.body}</MDXRenderer>
+          <div>
+            <img src={data.mdx.frontmatter.image} alt="heor" />
+            <MDXRenderer>{data.mdx.body}</MDXRenderer>
+          </div>
         ) : (
           <div>This page hasn't been translated yet</div>
         )}
@@ -33,6 +36,7 @@ export const query = graphql`
       frontmatter {
         slug
         title
+        image
       }
       body
     }

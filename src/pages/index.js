@@ -53,7 +53,7 @@ export const query = graphql`
   query($locale: String!) {
     allFile(
       filter: {
-        sourceInstanceName: { eq: "blog" }
+        sourceInstanceName: { eq: "posts" }
         childMdx: { fields: { locale: { eq: $locale } } }
       }
     ) {
